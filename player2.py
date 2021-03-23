@@ -17,4 +17,9 @@ def player(p):
 
   if key(DOWN):
     p.y -= v
-    
+
+def start():
+  #初期位置にする場合はxとy座標の指定は不要
+  add(player, image_player, 0.1)
+
+run(start, 1280, 720)
